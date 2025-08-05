@@ -2,26 +2,19 @@ import Image from "next/image"
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-[#f5f1e8] flex flex-col">
+    <div className="min-h-screen bg-[#fef2e2] flex flex-col">
       {/* Main Content - Logo and Coming Soon */}
       <div className="flex-1 flex flex-col items-center justify-center px-4 py-12">
-        {/* Floating Logo */}
-        <div className="w-full max-w-2xl mb-16 flex justify-center">
-          <div className="relative group">
-            <Image
-              src="/logo.jpg"
-              alt="SARV - Persian Art, Beauty and Authenticity"
-              width={600}
-              height={600}
-              className="w-auto h-auto max-w-full max-h-[500px] rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 ease-out transform hover:scale-105 hover:-translate-y-2"
-              style={{
-                filter: "drop-shadow(0 25px 50px rgba(45, 80, 22, 0.15))",
-              }}
-              priority
-            />
-            {/* Floating glow effect */}
-            <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-[#2d5016]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-          </div>
+        {/* Big Logo Stamp */}
+        <div className="max-w-2xl mb-16 flex justify-center w-[200%] h-[200%]">
+          <Image
+            src="/logo.jpg"
+            alt="SARV - Persian Art, Beauty and Authenticity"
+            width={600}
+            height={600}
+            className="w-auto h-auto max-w-full max-h-[500px]"
+            priority
+          />
         </div>
 
         {/* Coming Soon Header */}
@@ -40,7 +33,7 @@ export default function HomePage() {
       </div>
 
       {/* About Us Section */}
-      <section className="bg-white/30 py-16 px-4 backdrop-blur-sm">
+      <section className="bg-[#fef2e2] py-16 px-4">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-[#2d5016] text-center mb-8">About Us</h2>
           <div className="prose prose-lg mx-auto text-center">
@@ -63,10 +56,10 @@ export default function HomePage() {
 
           {/* Contact Info */}
           <div className="mt-12 text-center">
-            <h3 className="text-xl font-serif font-semibold text-[#2d5016] mb-4">Get in Touch</h3>
+            <h3 className="text-xl font-serif text-[#2d5016] mb-4 font-semibold">Get in Touch</h3>
             <div className="space-y-2 text-[#2d5016]/70">
-              <p>Email: info@sarv-art.com</p>
-              <p>Phone: +1 (555) 123-4567</p>
+              <p className="font-medium leading-7 text-xl">sarvcraft2025@gmail.com</p>
+              <p>{""}</p>
             </div>
           </div>
         </div>
